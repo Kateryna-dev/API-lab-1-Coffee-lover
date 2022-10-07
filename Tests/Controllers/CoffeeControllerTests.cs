@@ -18,7 +18,7 @@ namespace API_Interactive_Lab_1.Tests
         [Test]
         public void Test_Get_Coffee_No_Params()
         {
-            Coffee expected = new Coffee(-1, "latte");
+            Coffee expected = new(-1, "latte");
 
             var controller = new CoffeeController();
             var result = controller.Get(null);
@@ -30,7 +30,7 @@ namespace API_Interactive_Lab_1.Tests
         public void Test_Get_Coffee_By_Name()
         {
             string name = "cappuccino";
-            Coffee expected = new Coffee(7, name);
+            Coffee expected = new (7, name);
 
             var controller = new CoffeeController();
             var result = controller.Get(name);

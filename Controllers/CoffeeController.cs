@@ -9,7 +9,7 @@ namespace API_Interactive_Lab_1.Controllers
     public class CoffeeController : ControllerBase
 
     {
-        private Coffee[] coffeeArray = new Coffee[] { new (1,"espresso"), new (2, "americano"), new(7, "cappuccino") };
+        private readonly Coffee[] coffeeArray = new Coffee[] { new (1,"espresso"), new (2, "americano"), new(7, "cappuccino") };
 
         [HttpGet("{name}")]
         public Coffee Get(string? name)
